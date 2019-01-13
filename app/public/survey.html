@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/png" href="../assets/epq-favicon.png"/>
+    <meta charset="UTF-8">
+    <title>
+        Survey
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <style>
+        .results {
+            width: 100%;
+            text-align: center;
+        }
+
+        #modal-result {
+            display: inline-block;
+        }
+
+        #modal-img {
+            display: inline-block;
+        }
+    </style>
+  
+</head>
+
+<body>
+    <div class="container">
+        <h2>Personality Test</h2>
+        <hr>
+        <h4><strong>First: About You</strong></h4>
+        <h5>Name</h5>
+        <input type="text" name id="name" class="form-control" required>
+        <h5>Link to Photo Image</h5>
+        <input type="text" name id="photo" class="form-control" required>
+        <br>
+        <h3>The Questions </h3>
+        <h5>Q1: What do you when your friend is sad?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q1">
+                
+                <option value="" disabled selected>Choose your Option</option>
+                
+                <option value="5">I don't do emotions</option>
+                <option value="4">Ignore the problem until goes away</option>
+                <option value="3">Call another friend to ask help</option>
+                <option value="2">Invite my friend a beer</option>
+                <option value="1">Console them</option>
+            </select>
+        </div>
+        <h5>Q2: Have you ever heated up fish in the office microwave?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q2">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">Yes, I do it because I fell rude</option>
+                <option value="4">Yes, but just once </option>
+                <option value="3">No, I don't have a job </option>
+                <option value="2">I can't remember </option>
+                <option value="1">I would never do that</option>
+            </select>
+        </div>
+        <h5>Q3: How many tacos do you eat after a drink night?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q3">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">Three of each type, ok, four to be honest</option>
+                <option value="4">The same amount of my friends</option>
+                <option value="3">Two or three</option>
+                <option value="2">Just one, to be with my friends</option>
+                <option value="1">I go directly to sleep</option>
+            </select>
+        </div>
+        <h5>Q4: How you ever go to a Luis Miguel concert? </h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q4">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">No way!!!</option>
+                <option value="4">No but I sing his songs in secret</option>
+                <option value="3">Just to accompany someone</option>
+                <option value="2">Yes!</option>
+                <option value="1">Ohhh yes!! and I know all the special dance moves</option>
+            </select>
+        </div>
+        <h5>Q5: Have you ever save someone's life?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q5">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">I can barely save myself</option>
+                <option value="4">No!</option>
+                <option value="3">No but I ask for help</option>
+                <option value="2">Once in my life</option>
+                <option value="1">Multiple times.</option>
+            </select>
+        </div>
+         <h5>Q6: What do you do, if someone ask for charity</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q6">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">I extend my hand to ask for charity for myself.</option>
+                <option value="4">I say I am short of money.</option>
+                <option value="3">I give my small money.</option>
+                <option value="2">I help the person.</option>
+                <option value="1">I help economically and emotionally.</option>
+            </select>
+        </div>
+        <h5>Q7: If a genie grant you a wish, what would you ask?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q7">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">A billion dollars.</option>
+                <option value="4">A million dollars.</option>
+                <option value="3">Health to all my family and friends</option>
+                <option value="2">To end with global warming.</option>
+                <option value="1">World peace.</option>
+            </select>
+        </div>
+        <h5>Q8: Do you screenshot texts and save them as evidence for future arguments?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q8">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">Of course, is a must!</option>
+                <option value="4">Why, what have you heard?</option>
+                <option value="3">But just once. </option>
+                <option value="2">Not as evidence just as a reminder. </option>
+                <option value="1">Never</option>
+            </select>
+        </div>
+        <h5>Q9: Do you eat to kill the pain or depression?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q9">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">Anything is a good pretext to eat."</option>
+                <option value="4">Ohhh sometimes, ok always.</option>
+                <option value="3">Well it depends, but no to much.</option>
+                <option value="2">Yes, but just some icecream.</option>
+                <option value="1">Not anymore.</option>
+            </select>
+        </div>
+          <h5>Q10: How do you destroy an enemy?</h5>
+        <div class="input-field col s12">
+            <select data-placeholder id="q10">
+                <option value="" disabled selected>Choose your Option</option>
+                <option value="5">Thru a punch in his face.</option>
+                <option value="4">Slowly with psicological tricks.</option>
+                <option value="3">I don't destroy anyone, I just hurt them.</option>
+                <option value="2">I ignore them.</option>
+                <option value="1">I don't have enemies.</option>
+            </select>
+        </div>
+        
+        <button type="submit" class="waves-effect waves-light btn" id="submit-1">Submit</button>
+        <!-- Materialize Modals
+        // ************************************************************ -->
+         <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h5>Your dream match is...</h5><br><br>
+                <div class="results">
+                <h3 id="modal-result"></h3><br>
+                <img id="modal-img" src="" alt="" width="auto" height="auto">
+                </div>
+            </div>
+            <div class="modal-footer">
+      <a href="/" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+        </div> 
+    </div>
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!--MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    
+    <!--CUSTOM JS-->
+    <script type="text/javascript">
+        // Materialize Selectors
+        // ************************************************************
+        $(document).ready(function () {
+            $('select').material_select();
+            $('.modal').modal();
+        });
+
+        // Capture Answers
+        // ************************************************************
+        function Person(name, photo, answers) {
+            this.name = name;
+            this.photo = photo;
+            this.answers = answers;
+        }
+        // event listener
+        $("#submit-1").on("click", function (event) {
+            event.preventDefault();
+            let name = $("#name").val().trim();
+            let photo = $("#photo").val().trim();
+            let answers = [];
+            // loop through questions
+            for (let i = 0; i <= 9; i++) {
+                let q = $("#q" + (i + 1) + " option:selected").attr("value");
+                answers.push(q);
+            }
+            // create and send object
+            var person = new Person(name, photo, answers)
+            $.post("/api/new", person)
+                .done(function (data) {
+                    console.log(data.photo);
+                    $("#modal-result").html(data.name);
+                    $("#modal-img").attr("src", data.photo);
+                    $("#modal-img").attr("alt", data.name);
+                    $("#modal1").modal("open");
+                });
+        });
+    </script>
+
+</body>
+
+    <!--<footer class="footer">
+    <div class="container">
+        <br><br>
+        <p>
+            <a href="/api/friends">API Friends List</a>
+            <span> | </span>
+            <a id="github" href="https://github.com/bazfer/friendFinder">GitHub Repo</a>
+        </p>
+    </div>
+</footer>-->
+
+</html>
